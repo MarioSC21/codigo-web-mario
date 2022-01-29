@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <!-- Formularios -->
+    <form action="" method=""><!--Action > para enviar a la base de datos-->
+                                              <!-- Get:obtener, Post: enviar, Put:actualizar,  -->
+        <input type="text" placeholder="Nombre" name="nombre" id="mombre" required>
+
+        <input type="text" name="ip" value="127.0.1.1" readonly><!--readonly si se envia al servidor-->
+        <input type="text" name="num_hijos" value="5" disabled><!--disabled no se envia al servidor-->
+
+        <input type="number" placeholder="dni" name="dni" minlength="8" maxlength="8" step="5" min="0" required>
+        <input type="email" placeholder="email" name="email" id="email" required>
+        <input type="password" placeholder="passsword" name="pass" id="passw" required>
+
+        <input type="submit" value="ingresar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>Tablas</h1>
+    <!-- Th:titulo tabla, Td:filas de la tabla, tr:es para indicar la fila de tabla -->
+    <table border="1" bgcolor="red">
+        <thead>
+            <tr>
+                <th bgcolor="#fff">Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+                <th>Direccion</th>
+                <th>Celular</th>
+            </tr>
+        </thead>
+        <tbody><!--cuerpo de la tabla aca van las columna de los titulos-->
+        <tr bgcolor="yellow">
+            <td>Mario</td>
+            <td>CS</td>
+            <td>Mario@gmail.com</td>
+            <td>cdss</td>
+            <td>443434</td>
+        </tr>
+        <tr>
+            <td>Mario</td>
+            <td>CS</td>
+            <td>Mario@gmail.com</td>
+            <td>cdss</td>
+            <td>443434</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- ROWSPAN:fila Y COLSPAN:columna -- para dimensionar los espacios de las tablas-->
+    <h2>Tabla de alumnos</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Curso</th>
+                <th colspan="2">Nombre Apellido</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Ingles</td><!--Se borra el curso del tr de abajo poeque el rowspan es de 2 filas y va ocupar esos dos filas-->
+                <td>Mario</td>
+                <td>Cs</td>
+            </tr>
+            <tr>
+                <td>Mario</td>
+                <td>Cs</td>
+            </tr> 
+            <tr>
+                <td rowspan="1">Mate</td>
+                <td>Mario</td>
+                <td>Cs</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td colspan="2">Mario Cs</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
