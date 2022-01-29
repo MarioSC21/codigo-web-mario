@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+  </head>
+  <body>
+    <h1>Tipos de inputs</h1>
+    <!-- Input: puede ser texto/ numeros/ fechas/ colores/ hora/ archivo
+    /checkbox/radiobuttom -->
+    <input
+      type="text"
+      placeholder="Ingresa tu nombre"
+      value="hola"
+      name="nombre"
+      id="mi_no"
+    />
+    
+    <input
+      type="text"
+      placeholder="Ingresa tu Apellido"
+      value="apellido"
+      name="apellido"
+      id="mi_ap"
+    />
+
+    <h2>Input number</h2>
+    <input type="number" placeholder="Ingresa su edad" name="edad" id="mi_edad">
+
+    <h2>Input email y password</h2>
+    <input type="email" placeholder="Ingresa su correo" name="correo" id="mi_correo">
+    <label for="mi_password">Password</label>
+    <input type="password" placeholder="Ingresa su password" name="password" id="mi_password">
+
+    <input type="submit" value="Ingresar">
+
+    <h2>Input tipo fecha y hora</h2>
+    <input type="date" name="calendario" id="mi_calendario">
+    <input type="time" name="hora" id="mi_hora">
+    <input type="datetime-local" name="hora y fecha" id="mi_hora_fecha">
+
+    <h2>input tipo archivo</h2>
+    <input type="file"  name="archivo" id="mi_archivo">
+    <!-- Solo PDF -->
+    <input type="file" accept="application/pdf" name="archivo" id="mi_archivo">
+    <!-- Solo Imagenes -->
+    <input type="file" accept="image/*" name="archivo" id="mi_archivo">
+    <!-- Solo Videos -->
+    <input type="file" accept="video/*" name="archivo" id="mi_archivo">
+    <!-- Solo Audio -->
+    <input type="file" accept="audio/*" name="archivo" id="mi_archivo">
+
+    <h2>Input tipo radio - checkbox</h2>
+    <!-- los radios buttom -->
+    <input type="radio" name="op1" checked>radio1
+    <input type="radio" name="op1">radio2
+    <input type="radio" name="op1">radio3
+
+    <p><strong>Checkbox</strong></p>
+    <p>
+        <input type="checkbox" name="ch1[]" >checkbox1 <!--los corchetes se usan para que pueda usar el servidor-->
+        <input type="checkbox" name="ch1[]" >checkbox2
+        <input type="checkbox" name="ch1[]" >checkbox3
+    </p>
+
+    <h2>Input tipo color</h2>
+    <input type="color" name="color" id="mi_color">
+
+    <h2>Input tipo range</h2>
+    <input type="range" >
+
+    <h2>Input search</h2>
+    <input type="search" placeholder="ingresa tu busqueda">
+
+    <h2>Input Telefono</h2>
+    <input type="tel" placeholder="telefono">
+
+  </body>
+</html>
