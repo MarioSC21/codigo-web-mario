@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Registro</title>
+</head>
+<body align="center" bgcolor="#E7E7DD">
+    <h1>Formulario - Registro</h1>
+    <form action="" >
+        <p>
+            <label for="nombre"> <strong> Nombre:</strong></label>
+            <input  type="text" placeholder="Ingrese su nombre" name="nombre" required/>
+        </p>
+        <p>
+            <label for="apellidopa"> <strong> Apellido paterno:</strong></label>
+            <input  type="text" placeholder="Ingrese su apellido paterno" name="apellidopa" required/>
+        </p>
+        <p>
+            <label for="apellidoma"> <strong> Apellido materno:</strong></label>
+            <input  type="text" placeholder="Ingrese su apellido materno" name="apellidoma" required/>
+        </p>
+        <p>
+            <label for="dni"> <strong> DNI:</strong></label>
+            <input type="number" placeholder="dni" name="dni" minlength="8" maxlength="8" required>
+        </p>
+        <p>
+            <label for="tel"> <strong> Telefono:</strong></label>
+            <input  type="number" placeholder="Ingrese su telefono" name="tel" minlength="9" maxlength="9" required/>
+        </p>
+        <p>
+            <label for="correo"> <strong> Correo:</strong></label>
+            <input  type="email" placeholder="Ingrese su correo" name="correo" required/>
+        </p>
+        <p>
+            <label for="sexo"> <strong> Elija su sexo:</strong></label><br>
+            <input  type="radio" name="sexo" required/>Masculino
+            <input  type="radio" name="sexo" required/>Femenino
+            <input  type="radio" name="sexo" required/>Otro
+        </p>
+        <P>
+            <label for="date"><strong>Fecha nacimiento :</strong></label>
+            <input type="date" name="date" id="date">
+        </P>
+        <p>
+            <label for="img"><strong>Seleccione su foto :</strong></label>
+            <input type="file" accept="image/*" name="img" id="mi_archivo">
+        </p>
+        <input type="submit" value="Registrar" >
+    </form>
+    
+</body>
+</html>
