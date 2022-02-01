@@ -1,0 +1,41 @@
+body {
+    font-family: Helvetica;
+    background-color: azure;
+}
+h3 {
+    color: rgb(62, 190, 184);
+}
+h4 {
+    color: rgb(179, 86, 86);
+}
+
+.container-principal {
+    text-align: center;
+}
+.link-referencia {
+    background-color: rgb(226, 172, 105);
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.link-referencia:hover {
+    text-decoration: underline;
+    color: azure;
+}
+
+.container-principal p {
+    text-align: center;
+
+}
+.imagen-perfil {
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.btn-github {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}

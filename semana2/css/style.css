@@ -1,0 +1,113 @@
+body {
+    font-family: Helvetica;
+}
+h1 {
+    color: red;
+    background-color: black;
+}
+h2 {
+    color: antiquewhite;
+    background-color: black;
+}
+
+p {
+    color: rgb(13, 14, 14);
+    /* background-color: rgb(252, 252, 252); */
+}
+a {
+    color: rgb(0, 0, 0);
+    background-color: rgb(150, 175, 80);
+}
+/* los ID son para un elemento no se usan para mas de un elemento, para se usn las clases */
+#div1{
+    background-color: rgb(255, 160, 160);
+}
+#div2 {
+     background-color: yellow;
+ }
+
+ .container-principal {
+     background-color: cadetblue;
+     padding: 30px;
+ }
+ .btn-ingresar {
+     background-color: rgb(19, 122, 170);
+     color: white;
+     padding: 10px;
+     border-radius: 10px;
+     border: none;
+     text-decoration: none;
+ }
+ /*.btn-registro {
+    background-color: rgb(180, 76, 166);
+    color: white;
+    font-size: 25px; 
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+ }*/
+ .btn-registro {
+     font-size: 25px;
+ } /*Reutilzar codigo poniendo dos clases*/
+
+ .container-form {
+     border: 3px solid rosybrown; /* ancho, tipo, color */
+     border-radius: 8px;
+     
+ }
+ .container-interno-form {
+     padding: 20px;
+     text-align: center;
+ }
+ .tittle-form {
+    color: rgb(73, 120, 134);
+    background-color: aliceblue;
+ }
+ .input-form {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px rgb(20, 20, 20) solid;
+    width: 400px;
+ }
+ .input-codigo {
+     width: 100px;/*toma el ultimo estilo encontrado*/
+ }
+ .input-numero {
+     width: 275px;
+ }
+ 
+/* PSEUDOCLASES */
+/* Los elementos tienen propiedades internas por ejemplo el hover */
+/* hover : es la propiedad que detecta cuando  el mouse esta sobre el elemento */
+
+.btn-ingresar:hover {
+    background-color: burlywood;
+    color: black;
+    padding: 20px;
+}
+/* Los elementos como el <a> tienen pseudaclases como:*/
+/* 
+    Link, visited, hover, active
+*/
+div:hover{
+    background-color: rgb(202, 224, 224);
+}
+.container-interno-form h1 {
+    border: 2px solid black;
+}
+h1:first-child {
+    background-color: rgb(228, 219, 169);
+    /* firts child :busca el primer elemento del contenedor */
+}
+
+.container-interno-form input:first-of-type{
+    color: tomato;
+    /* firts-of-type : Afecta a todos */
+}
+.container-interno-form p:nth-child(2){
+    border: 1px rgb(231, 219, 219) solid;
+    /* nth-child : sirve para escoger uno en especifico */
+}
+
+
+
