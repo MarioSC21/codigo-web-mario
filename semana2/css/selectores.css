@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container p {
+    color: rgb(134, 42, 88);
+}
+.container-dos h2 {
+    color: rgb(32, 72, 206);
+}
+.container-tres a img{
+    border: 2px solid rgb(145, 73, 212);
+}
+.menu-navegacion {
+    margin: 20px;
+}
+
+ul > li {
+    /* signo > : cuando sin el padre no funcione > Hijo nativo */
+    border: 2px solid green;
+}
+/* input por su tipo igual se puede hacer con los botones */
+input[type="password"] {
+    color: rgb(136, 100, 46);
+}
+input[type="email"] {
+    color: rgb(46, 133, 190);
+}

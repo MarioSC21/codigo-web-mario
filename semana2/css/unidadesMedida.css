@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner {
+    background-color: rgb(30, 108, 209);
+    height: 40vh; /*view port height : toma el alto de la pantalla
+                    va del 1 al 100 siendo 100 toda la pantalla
+                    siempre se mantiene en su posicion asi sea cualquier pantalla*/
+    width:40%;                
+}
+.banner-medio {
+    height: 20vh;
+    background-color: cadetblue;
+    width: 50%;
+}
+.banner-dos {
+    height: 40vh;
+    background-color: bisque;
+    width: 60%;
+}
+.banner-tres {
+    height: 300vh;
+    background-color: rgb(214, 57, 57);
+    width: 70%;
+}
+.banner-cuatro {
+    background-color: blueviolet;
+    height: 40vh;
+    min-width: 50%;
+    max-width: 80%;
+}
+.banner-cinco {
+    border: 5px solid blue;
+    width: 300px;
+    height: 300px;
+}
+.titulo {
+    font-size: 4em;
+}
+.parrafo {
+    font-size: 50px;
+}

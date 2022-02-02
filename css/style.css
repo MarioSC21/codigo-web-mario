@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Helvetica;
     background-color: azure;
@@ -11,11 +15,29 @@ h4 {
 
 .container-principal {
     text-align: center;
+    height: 100vh;
+}
+.container-section {
+    height: 100vh;
+    background-color: rgb(219, 209, 188);
+}
+.lista-semana {
+    margin: 40px;
+    padding: 40px;
+    list-style: none;
+}
+h3, h4 {
+    font-size: 3em;
+    margin: 20px;
+}
+.lista-semana li {
+    padding: 20px;
 }
 .link-referencia {
-    background-color: rgb(226, 172, 105);
+    background-color: rgb(229, 190, 143);
     color: black;
     padding: 10px;
+    margin: 20px;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -38,4 +60,15 @@ h4 {
     padding: 10px;
     color: black;
     text-decoration: none;
+}
+.image-programador {
+    border-radius: 8px;
+    margin-top: 40px;
+}
+.divisor {
+    margin: 20px;
+    height: 4px;
+    background-color: black;
+    border: none;
+    border-radius: 12px;
 }

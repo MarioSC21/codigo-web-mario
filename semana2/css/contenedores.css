@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace, cursive, sans-serif;
+}
+.contenedor-uno {
+    height: 30vh;
+    padding: 10px;
+    background-color: hsl(109, 62%, 78%);
+}
+.contenedor-uno h1,p {
+    margin: 10px;
+}
+.contenedor-form {
+    border: 3px solid rgb(68, 68, 61);
+    height: 100vh;
+    background-color: rgb(201, 199, 79);
+}
+
+input {
+    display: block;/*convierte a tipo bloque*/
+    margin: 10px;
+    padding: 6px;
+    border: 3px solid rgb(83, 190, 137);
+}
+article {
+    height: 40vh;
+    background-color: rgba(123, 234, 133, 0.3);
+    /* rgba : va del 0 al 1 */
+}

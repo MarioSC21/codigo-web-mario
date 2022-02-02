@@ -26,10 +26,10 @@ a {
      background-color: yellow;
  }
 
- .container-principal {
+.container-principal {
      background-color: cadetblue;
      padding: 30px;
- }
+}
  .btn-ingresar {
      background-color: rgb(19, 122, 170);
      color: white;
