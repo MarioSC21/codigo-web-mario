@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+.texto-animado {
+    /* una animacion esta comopuesta por nombre y tiempo */
+    animation-name: texto-volador;
+    animation-duration: 10s;
+    border: solid;
+    /* animation-iteration-count: infinite; */
+}              
+@keyframes texto-volador {
+    from {
+        margin-left: 100%;
+        width: 300%;
+        background-color: rgb(154, 213, 240);
+    }
+    to {
+        margin-left: -100%;
+        background-color: rgb(238, 158, 221);
+        color: white;
+        border: none;
+    }
+}
+.image-animada {
+    animation-name: image-resize;
+    animation-duration: 20s;
+    /* animation-iteration-count: 3; */
+    width: 400px;
+    height: 400px;
+}
+
+@keyframes image-resize {
+    from{
+        width: 20px;
+        height: 20px;
+    }
+    to {
+        width: 400px;
+        height: 400px;
+    }
+}
+.box-uno {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    animation-name: box-animation;
+    animation-duration: 10s;
+}
+@keyframes box-animation {
+    0% {
+        background-color: black;
+    }
+    25% {
+        background-color: aqua;
+    }
+    50% {
+        background-color: chocolate;
+    }
+    75% {
+        background-color: cornflowerblue;
+    }
+    100% {
+        background-color: yellow;
+    }
+}
+.ball-uno {
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    animation-name: ball-animation;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes ball-animation  {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-135px);
+    }
+}
+.lineas {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    font-size: 24px;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    border-right: 2px solid black;
+    overflow: hidden;
+}
+.texto-animado2 {
+    animation: tex-animado 5s steps(144) 1s normal both,
+    cursor 0.3s steps(50) infinite normal;
+    /* animation-name: tex-animado;
+    animation-duration: 2s;
+    animation-timing-function: steps(144);
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-delay: 1s; */
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes tex-animado {
+    from {
+        width: 0;
+    }
+    to {
+        width: 600px;
+    }
+}
+@keyframes cursor {
+    from {
+        border-right-color: 2px solid black;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form {
+    border: 2px solid #ccc;
+    padding: 50px;
+    border-radius: 8px;
+}
+.registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 110%;
+}
+.form h2 {
+    letter-spacing: 2px;/* para que cada letra tenga separacion*/
+    color: rgb(53, 128, 226);
+}
+.input-form {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: solid 2px #ccc;
+    border-radius: 6px;
+}
+.input-form:focus {
+    border:rgb(17, 20, 207) solid 2px;
+    outline: none;
+}/*para camabiar el contorno al presionar el input*/
+
+.btn-primary {
+    margin-top: 20px;
+    padding: 10px;
+    width: 110%;
+    background-color: rgb(50, 38, 221);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+}
+/* usaremos transform cuando queremos cambiar el estado de una propieadad */
+/* transition
+    linear - la misma velocidad desde que empieza hasta que termina
+    ease-in - empieza lento acaba rapido
+    ease-out - empeiza rapido acaba lento
+    ease-in-out - */
+.btn-primary:hover {
+    background-color: rgb(143, 143, 33);
+}
+.container-help {
+    transition: ease-in 1s;
+}
+.text-help {
+    display: none;
+    max-width: 300px;
+    min-width: 300px;
+}
+.button-help {
+    border: none;
+    width: 40px ;
+    height: 40px;
+    background-color: transparent;
+}
+.container-help:hover + .text-help{
+    display: block;
+    border: solid rgb(133, 133, 230);
+    transition: 10s;   
+}
+
+

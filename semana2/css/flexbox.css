@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+}
+.section-main {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid brown; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    /* border: solid; */
+}
+.nav ul > li {
+    margin: 10px;
+}
+.section-principal {
+    display: flex;
+    /* Por default flex alinea los elementos en fila(row) */
+    flex-direction:row;
+    flex-wrap: wrap; /*para que se muestre en diferentes filas/
+    flex-wrap: nowrap; /*para que se muestre en una solo fila*/
+    
+}
+.section-principal div {
+    width: 25%;
+    
+}
+.section-principal div p {
+    border: 3px solid black;
+}
+
+.section-dos {
+    display: flex ;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    border: 3px solid rgb(87, 199, 92);
+    height: 50vh;
+}
+.section-dos div {
+    border: 3px solid rgb(111, 87, 199);
+    height: 10vh;
+    background-color: aquamarine;
+    
+}
+.flex-grow {
+    flex-grow: 1;/*crecer los elementos y que ocupen todo el ancho de la pantalla*/
+}
+.flex-shrink {
+    flex-shrink: 1;/*para reducir espacios*/
+    background-color: blue !important;
+}
