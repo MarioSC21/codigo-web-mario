@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* font-family: 'Barlow Semi Condensed', sans-serif; */
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+.container-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+.container-main {
+    background-color: hsl(216, 50%, 16%);
+    width: 350px;
+    border-radius: 11px;
+    padding: 20px;
+    
+}
+.container-image {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background: url(../../imagenes/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    border-radius: 12px;
+}
+.color {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  
+    opacity: 0;
+    transition: 0.4s;
+}
+.image-main {
+    width: 60px;  
+}
+.container-image:hover .color{
+    background-color: rgba(0, 255, 247, 0.322);
+    border-radius: 12px;
+    opacity: 0.9;
+    
+}
+h4 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 21px;
+    padding: 17px 0px ;
+    cursor: pointer;
+    width: 170px;
+}
+h4:hover {
+    color: hsl(178, 100%, 50%);
+}
+p {
+    color: hsl(215, 26%, 58%);
+    font-weight: 100;
+}
+.container-eth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0px ;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.etherum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.etherum span {
+    padding-left: 5px;
+    color: hsl(178, 100%, 50%);
+}
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.day span{
+    padding-left: 5px;
+    color: hsl(215, 26%, 58%);
+}
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px 10px;
+}
+.img-footer {
+    height: 30px;
+}
+.img-footer img {
+    width: 30px;
+    border: hsl(0, 0%, 100%) 1px solid;
+    border-radius: 50%;
+}
+.footer-p p {
+    padding-left: 14px;
+    font-weight: 100;
+}
+.footer p > strong {
+    color: hsl(0, 0%, 100%);
+    font-weight: 100;
+    cursor: pointer;
+}
+.strong:hover {
+    color: hsl(178, 100%, 50%);
+}
