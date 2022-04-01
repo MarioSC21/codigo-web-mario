@@ -1,0 +1,18 @@
+//dark mode
+$bg-dark : rgb(22,52,151);
+$tex-Dark : #fff;
+
+//light mode
+$bg-light : rgb(31,  255, 162);
+$text-light : #000;
+
+body[data-mode="light"]{
+    background-color: $bg-light;
+    color: $text-light;
+}
+
+body[data-mode="dark"]{
+    background-color: $bg-dark;
+    color: $tex-Dark;
+}
+

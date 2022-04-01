@@ -1,0 +1,16 @@
+ 
+ /* section, div{
+   display: inline-block;
+ }
+ button{
+    cursor: pointer; 
+    font-family:Tahoma; 
+    /* background-color:#eebabaa1; */
+    border-radius: 50%;
+    border: 0;   
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    background-image: url("../image/corchea.png");
+    background-size: cover;
+  } */

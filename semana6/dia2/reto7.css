@@ -1,0 +1,15 @@
+body {
+  font-family: "Fredoka", Courier, monospace;
+}
+
+#github-action-search {
+  background-color: rgba(0, 225, 255, 0.644);
+  border-color: rgba(0, 0, 0, 0.521) ;
+  color: black;
+  animation: transform 2s ease-in-out;
+}
+#github-action-search:hover {
+    transform: scale(1.1);
+  box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.75);
+}

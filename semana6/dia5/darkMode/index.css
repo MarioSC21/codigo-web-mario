@@ -1,0 +1,10 @@
+body[data-mode="light"] {
+  background-color: #1fffa2;
+  color: #000;
+}
+
+body[data-mode="dark"] {
+  background-color: #163497;
+  color: #fff;
+}
+/*# sourceMappingURL=index.css.map */
