@@ -1,0 +1,70 @@
+*{
+    padding: 5px;
+    margin: 5px;
+}
+
+.form-title{
+    display: flex;
+    justify-content: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+body {
+    font-family: Arial;
+    background-color: #4ac7a8;
+    padding: 50px;
+    }
+
+.form{
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    width:340px;
+    margin-inline: auto;
+}
+
+label{
+    font-weight: bold;
+}
+
+.form-date,.form-tel,.form-mail,.form-pass,.form-pass1{
+    display: flex;
+    justify-content: center;
+}
+input{
+    background-color: #bfc991;
+    border: 3px solid transparent;
+    border-radius: 3px;
+}
+
+.form-button{
+    display: flex;
+    justify-content: center;
+    border: 2px solid transparent;
+}
+button{
+    border: 2px solid transparent;
+  background: #d8ac8f;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  width: 100px;
+  margin: 0 auto;
+}
+/*.form-password{
+    display: block;
+    margin: 5px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}*/
+
+/*.form-label-password1{
+    margin-top: -13px;
+    margin-bottom: 0px;
+    display: flex;
+}*/

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Mi primer portafolio</title>
+        <link rel="icon" type="image/png" href="image/link.png" /> <!--El important no se recomienda usar-->
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/estyle.css"> <!--Es para importar css desde afuera -->
+        <!--<style>
+            header{
+                background: seagreen; 
+            }
+        </style> --> <!--Este style no funciona porque esta el otro style que vale mas-->
+    </head>
+    <body>
+        <header class="header"> <!--style="color: red; background-color: royalblue;">--> <!--Este style por estar dentro del main vale más que el style del head--> 
+            <div class="container">
+                <figure class="logo">
+                    <img src="image/logo.png" alt="Logo de la pagina" width="350" height="60"  /> 
+                </figure>
+                <nav class="menu">
+                    <ol>
+                        <li>
+                            <a class="link" href="#portafolio">Portafolio</a>   <!--EL # para navegar dentro del mismo sitio-->
+                        </li>
+                        <li>
+                            <a class="link" href="#eventos">Experiencia</a>  
+                        </li>
+                        <li>
+                            <a class="link" href="./image/">Trabajemos juntos</a>  <!--EL # para navegar dentro del mismo sito , pero teniendo otra pagina dedicada-->
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container">
+                <h1>
+                    Hola soy <strong>Mario</strong> <br> estudiante del <strong>ISUR</strong> <!--br para salto de linea-->
+                </h1>
+                <img class="hero_img" src="image/link2.png" width="500" height="300" alt="Imagen principal del sitio"/> 
+            </div>
+        </section>
+        <section id="portafolio" class="portfolio"> <!--Las ID sirven para darle una identificacion y poder navegar entre el mismo sitio-->
+            <div class="container">
+                <h2>Portafolio</h2>
+                <article class="project">
+                    <div class="project_details">
+                        <h3 class="project_title">Platzi vedio</h3>
+                        <h6 class="project_course">React Native</h6>
+                        <p class="project_date"><small> <strong>Fecha:</strong> 01/082018 </small></p>
+                        <p class="project_url"><small> <strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+                        <p class="project_description">Platzi Video fue el resulatado de 3 meses de Trabajemos
+                            creando esta graaaaa pagina web
+                        </p>
+                    </div>
+                    <figure class="project_imageContainer"> <!--imagen contenedora se usa para envolver-->
+                        <img class="project_image" src="image/link4.jfif" alt="imagen de portafolio">    
+                    </figure>
+                </article>
+            </div>
+        </section>
+        <div class="container">
+            <h2 class="event_list_title">Mas sobre mi Experiencia</h2>
+        </div>
+        <section id="eventos" class="event_list">
+            <div class="container">
+                <article class="event">
+                    <figure class="event_imageContainer">
+                        <img class="event_image" src="image/link3.jpg" width="400" />
+                    </figure>
+                    <div class="event_detail">
+                        <h3 class="event_title">Platzi Peru 2021</h3>
+                        <p class="event_description">El evento ams grande de platzi</p>
+                        <a class="event_url" href="https://www.youtube.com/watch?v=k58eQtbpRgY" target="_blank">Cancion</a> <!--Target se usa para que al momento de dar click al enlace no nos bote 
+                                                                                                         de la pagiana-->
+                    </div>                                                                                     
+                </article>
+                <article class="event">
+                    <figure class="event_imageContainer">
+                        <img class="event_image" src="image/link3.jpg" width="400" />
+                    </figure>
+                    <div class="event_detail">
+                        <h3 class="event_title">Platzi Peru 2021</h3>
+                        <p class="event_description">El evento ams grande de platzi</p>
+                        <a class="event_url" href="https://www.youtube.com/watch?v=k58eQtbpRgY" target="_blank">Cancion</a> <!--Target se usa para que al momento de dar click al enlace no nos bote 
+                                                                                                         de la pagiana-->
+                    </div>                                                                                     
+                </article>
+                <article class="event">
+                    <figure class="event_imageContainer">
+                        <img class="event_image" src="image/link3.jpg" width="400" />
+                    </figure>
+                    <div class="event_detail">
+                        <h3 class="event_title">Platzi Peru 2021</h3>
+                        <p class="event_description">El evento ams grande de platzi</p>
+                        <a class="event_url" href="https://www.youtube.com/watch?v=k58eQtbpRgY" target="_blank">Cancion</a> <!--Target se usa para que al momento de dar click al enlace no nos bote 
+                                                                                                         de la pagiana-->
+                    </div>                                                                                     
+                </article>
+                <article class="event">
+                    <figure class="event_imageContainer">
+                        <img class="event_image" src="image/link3.jpg" width="400" />
+                    </figure>
+                    <div class="event_detail">
+                        <h3 class="event_title">Platzi Peru 2021</h3>
+                        <p class="event_description">El evento ams grande de platzi</p>
+                        <a class="event_url" href="https://www.youtube.com/watch?v=k58eQtbpRgY" target="_blank">Cancion</a> <!--Target se usa para que al momento de dar click al enlace no nos bote 
+                                                                                                         de la pagiana-->
+                    </div>                                                                                     
+                </article>
+            </div>
+        </section>
+        <section id="contacto" class="contact">
+            <div class="container">
+                <form class="form_email" action="/suscripcion/"> <!--La accion del formulario (para abrir formularios)-->
+                   <h3>¿Creamos algo juntos?</h3>
+                   <label for="email">Dejame tu EMAIL</label> 
+                   <input type="text" placeholder="Dejano tu EMAIL" value="@gmail.com" id="email"> <!--Para que escriba el ususario-->>
+                   <input type="submit" value="Enviar otra forma"> <!--Otra forma de colocar el boton-->
+                   <button>Enviar</button> <!--Forma de coloca el boton-->
+                </form>
+                <div class="social">
+                    <a href="https://www.youtube.com/watch?v=5ZzSxI2HGSs" class="social_link twiter" target="_blank"></a>
+                    <a href="https://www.facebook.com/OpeningyEndingMundial/videos/596938764678015" class="social_link facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/?hl=es" class="social_link instagram" target="_blank"></a>
+                    <a href="https://www.youtube.com/watch?v=5ZzSxI2HGSs" class="social_link youtube" target="_blank"></a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div>
+                    <p>Curso Web <img src="" alt="web"></p>
+                </div>
+                <div>
+                    <p>
+                        Desiño con amor <\3 by <a href="https://www.youtube.com/watch?v=5ZzSxI2HGSs">Youtube</a>
+                    </p>
+                </div>
+            </div>
+        </footer> 
+    </body>
+</html>

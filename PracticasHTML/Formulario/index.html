@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/Style.css" rel="stylesheet" type="text/css">
+    <title>Formulario_Login</title>
+</head>
+<body>
+    <div class="form">
+        <h1 class="form-title">Formulario</h1>
+        <form action="procesa.php" class="form-body" method="POST"><!--POST > para que vaije la informacion segura > el Get > no es muy seguro porque revela la informacion-->
+            
+            <div class="form-name">
+                <label class="form-label-name" for="login-name">Nombres</label>
+                <input type="text" name="nombre" id="login-name" placeholder="Ingrese su nombre" title="Ingrese su usuario" required><br><!--required > para que se obligatoria la informacion-->
+            </div>
+
+            <div class="form-lastname">
+                <label class="form-label-lastname" for="login-Lastname">Apellidos</label>
+                <input type="text" name="apellidos" id="login-Lastname" placeholder="Ingresa su apellido" required><br>
+            </div>
+
+            <div class="form-date">
+            <label class="form-label-date" for="login-date">Fecha de Nacimineto</label>
+            <input type="date" name="fecha de nacimineto" id="login-date" placeholder="Ingresa su fecha de nacimiento" required><br>
+            </div>
+
+            <div class="form-tel">
+                <label class="form-label-tel" for="login-tel">Numero de Celular</label>
+                <input type="tel" name="telefono" id="login-tel" placeholder="Ingresa su telefono" maxlength="9" required><br>
+            </div>
+
+            <div class="form-mail">
+                <label class="form-label-mail" for="login-mail">Correo electronico</label>
+                <input type="email" name="email" id="login-mail" value="@gmail.com" required><br>
+            </div>
+
+            <div class="form-pass">
+                <label class="form-label-password" for="login-password">Contraseña</label>
+                <input class="form-password" type="password" name="password" value="" id="login-password" placeholder="Contraseña" required><br>
+            </div>
+
+            <div class="form-pass1">
+                <label class="form-label-password1" for="login-password1">Confirmar contraseña</label>
+                <input type="password" name="password1" value="" id="login-password" placeholder="Confirmar contraseña" required><br>
+            </div>
+
+            <div class="form-button">
+                <button  class="form-btnEnviar">Enviar</button>
+                <button  class="form-btnLimpiar">Limpiar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
